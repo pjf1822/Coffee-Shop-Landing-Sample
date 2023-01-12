@@ -4,13 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
     </style>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="script.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rowdies&display=swap");
+    </style>
+    <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.js"></script>
   </head>
   <body>
     <!-- HERO  -->
@@ -28,10 +47,139 @@
       </div>
     </div>
 
+    <!-- CAROUSEL  -->
+
+    <div class="glide-wrapper">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="glide__slideTopWrapper">
+                <div
+                  class="glide__slideTop"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1613420471688-009b97bc5655?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVudXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60');
+                  "
+                ></div>
+              </div>
+
+              <div class="glide__slideBottom">Takeout Menu</div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__slideTopWrapper">
+                <div
+                  class="glide__slideTop"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1507133750040-4a8f57021571?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+                  "
+                ></div>
+              </div>
+
+              <div class="glide__slideBottom">Online Specials</div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__slideTopWrapper">
+                <div
+                  class="glide__slideTop"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhcmVlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60');
+                  "
+                ></div>
+              </div>
+
+              <div class="glide__slideBottom">careers</div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__slideTopWrapper">
+                <div
+                  class="glide__slideTop"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3RvcmUlMjBmcm9udHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60');
+                  "
+                ></div>
+              </div>
+
+              <div class="glide__slideBottom">locations</div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__slideTopWrapper">
+                <div
+                  class="glide__slideTop"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1589758438368-0ad531db3366?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGNhcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60');
+                  "
+                ></div>
+              </div>
+              <div class="glide__slideBottom">rewards</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- APPLY NOW -->
+    <div class="applyNow_wrapper">
+      <div class="applyNow_text">
+        <h1>Join the best team in town!</h1>
+        <h3>
+          If you are looking for year-round employment with flexible hours and
+          great benefits (FREE COFFEE) apply online or at your local shop today!
+        </h3>
+      </div>
+      <div class="applyNow_button">
+        <button>APPLY NOW</button>
+      </div>
+    </div>
+
     <!-- SOCIAL MEDIA -->
     <div class="social-media-wrapper">
       <h2 class="social-media-title">SOCIAL MEDIA</h2>
       <div class="social-media-line"></div>
+      <div id="social-media-icon-wrapper">
+        <img
+          class="social-media-icon"
+          src="./Icons/icons8-facebook-color/icons8-facebook-96.png"
+        />
+        <img
+          class="social-media-icon"
+          src="./Icons/icons8-twitter-circled-color/icons8-twitter-circled-96.png"
+        />
+        <img
+          class="social-media-icon"
+          src="./Icons//icons8-tiktok-color/icons8-tiktok-96.png"
+        />
+        <img
+          class="social-media-icon"
+          src="./Icons/icons8-instagram-color/icons8-instagram-96.png"
+        />
+      </div>
     </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer-wrapper">
+      <ul class="footer-list"></ul>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+    <script>
+      new Glide(".glide", {
+        type: "carousel",
+        startAt: 0,
+        perView: 3,
+        autoplay: true,
+        hoverpause: true,
+        animationDuration: 4000,
+        rewind: true,
+        gap: 10,
+
+        breakpoints: {
+          800: {
+            perView: 2,
+          },
+        },
+      }).mount();
+    </script>
   </body>
 </html>
