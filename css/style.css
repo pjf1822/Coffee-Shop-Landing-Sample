@@ -10,6 +10,32 @@ body {
   --brown: #85586f;
 }
 
+/* NAV */
+
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  background-color: var(--medium);
+}
+
+.nav_itemsWrapper {
+  width: 100%;
+}
+
+.nav_itemsList {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-between;
+}
+.nav_listItemDropdown {
+  display: none;
+}
+
+.nav_listItem:hover > .nav_listItemDropdown {
+  display: flex;
+}
+
 /* HERO  */
 
 .hero-wrapper {
