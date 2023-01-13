@@ -83,3 +83,23 @@ for (var i = 0; i < footerArray.length; i++) {
 //   navListItem4.textContent = navListItem4Content;
 //   navList4.appendChild(navListItem4);
 // }
+
+// nav menu
+
+const menu = document.querySelector(".nav-wrapper-mobile");
+const hamburger = document.querySelector(".hamburger");
+const hamburgerLines = document.querySelectorAll(".hamburger-line");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+  } else {
+    menu.classList.add("showMenu");
+    for (let i = 0; i < hamburgerLines.length; i++) {
+      console.log("hamburger-line", hamburgerLines[i]);
+      hamburgerLines[i].classList.add("blackBurger");
+    }
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);

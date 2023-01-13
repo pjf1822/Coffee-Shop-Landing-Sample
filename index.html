@@ -10,14 +10,9 @@
       @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
     </style>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rowdies&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Rowdies&display=swap");
     </style>
     <link rel="stylesheet" href="./css/style.css" />
-
-    <link
-      rel="stylesheet"
-      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
-    />
 
     <link
       rel="stylesheet"
@@ -36,7 +31,7 @@
     <div class="nav-wrapper">
       <div class="nav_logo">
         <img
-          src="./cup-o-joe-logo-zip-file//png/cpu.png"
+          src="./cup-o-joe-logo-zip-file/png/logo-no-background copy.png"
           class="nav_logoIcon"
           alt=""
         />
@@ -48,22 +43,61 @@
             <div class="nav_dropdownWrapper">
               <ul class="nav_listDropdown">
                 <li class="nav_listDropdownItem">Coffee</li>
-                <li class="nav_listDropdownItem">Giftcards</li>
-                <li class="nav_listDropdownItem">Giftcards</li>
-                <li class="nav_listDropdownItem">Giftcards</li>
-                <li class="nav_listDropdownItem">Giftcards</li>
+                <li class="nav_listDropdownItem">Gift Cards</li>
+                <li class="nav_listDropdownItem">Apparel</li>
+                <li class="nav_listDropdownItem">Mugs & Accessories</li>
+                <li class="nav_listDropdownItem">Gift Baskets</li>
               </ul>
             </div>
           </li>
           <li class="nav_listItem">Cafe Locations</li>
-          <li class="nav_listItem">Menu</li>
+          <li class="nav_listItem">
+            Menu
+            <div class="nav_dropdownWrapper">
+              <ul class="nav_listDropdown">
+                <li class="nav_listDropdownItem">Nutritional Information</li>
+              </ul>
+            </div>
+          </li>
           <li class="nav_listItem">About</li>
-          <li class="nav_listItem">Careers</li>
+          <li class="nav_listItem">
+            Careers
+            <div class="nav_dropdownWrapper">
+              <ul class="nav_listDropdown">
+                <li class="nav_listDropdownItem">Online Application</li>
+                <li class="nav_listDropdownItem">Print Application</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-wrapper-mobile">
+      <div class="nav_logo-mobile">
+        <img
+          src="./cup-o-joe-logo-zip-file/png/cupo.png"
+          class="nav_logoIcon-mobile"
+          alt=""
+        />
+      </div>
+      <div class="nav_itemsWrapper-mobile">
+        <ul class="nav_itemsList-mobile">
+          <li class="nav_listItem-mobile">Online Store</li>
+          <li class="nav_listItem-mobile">Cafe Locations</li>
+          <li class="nav_listItem-mobile">Menu</li>
+          <li class="nav_listItem-mobile">About</li>
+          <li class="nav_listItem-mobile">Careers</li>
         </ul>
       </div>
     </div>
     <!-- HERO  -->
     <div class="hero-wrapper">
+      <div class="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+
       <div class="hero_video-wrapper">
         <video className="hero_backgroundVideo" autoplay loop muted>
           <source src="./videos/PexelsVideos2675509.mp4" type="video/mp4" />
@@ -157,14 +191,23 @@
     <!-- APPLY NOW -->
     <div class="applyNow_wrapper">
       <div class="applyNow_text">
-        <h1>Join the best team in town!</h1>
-        <h3>
+        <h1 style="padding-bottom: 16px; font-weight: 400">
+          Join the best team in town!
+        </h1>
+        <h3 style="line-height: 33px; font-size: 21px">
           If you are looking for year-round employment with flexible hours and
           great benefits (FREE COFFEE) apply online or at your local shop today!
         </h3>
       </div>
       <div class="applyNow_button">
-        <button>APPLY NOW</button>
+        <button style="display: flex; justify-content: center">
+          APPLY NOW
+          <img
+            class="applyNow_buttonIcon"
+            src="./notebook-svgrepo-com.svg"
+            alt=""
+          />
+        </button>
       </div>
     </div>
 
@@ -214,6 +257,13 @@
         breakpoints: {
           800: {
             perView: 2,
+          },
+          500: {
+            perView: 1,
+            peek: {
+              before: 80,
+              after: 0,
+            },
           },
         },
       }).mount();
